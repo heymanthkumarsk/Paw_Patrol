@@ -1,0 +1,1065 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: poppins;
+}
+
+/* *****************************************************************HEADER*********************************************************************** */
+
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+
+.logo a img {
+    height: 40px;
+    width: auto;
+}
+
+header nav a {
+    color: #A65439;
+    padding-right: 15px;
+}
+
+header nav a:hover {
+    color: #A65439;
+    font-size: 20px;
+}
+
+
+header nav a:nth-child(4) {
+    padding-right: 0;
+}
+
+header .menubtn {
+    display: none;
+    font-size: 30px;
+    font-weight: 900;
+    color: #7C4030;
+    cursor: pointer;
+}
+
+/* ******************************************************************BANNER************************************************************************ */
+
+.banner {
+    background-image: linear-gradient(to right, rgba(121, 65, 51, 0.6), rgba(121, 65, 51, 0.6), rgba(219, 181, 150, 0.6)), url(../Image/bannner_img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* height: 100vh; */
+
+}
+
+.banner .container {
+    color: #ffffff;
+    padding: 150px 200px;
+}
+
+.banner h1 {
+    font-size: 60px;
+    font-family: 'Averia Serif Libre', serif;
+    padding-bottom: 15px;
+}
+
+.banner p {
+    font-size: 16px;
+    border-left: 3px solid #ffffff;
+    padding-left: 7px;
+    padding-right: 600px;
+}
+
+.banner a {
+    font-size: 16px;
+    color: #7C4030;
+    background-color: #F1E3D4;      
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.banner a:hover {
+    background-color: #A65439;
+    color: #ffffff;
+}
+
+.fetch {
+    padding-top: 35px;
+}
+
+/* **************************BACKGROUND IMAGE******************** */
+ 
+main {
+    background-image: url(../Image/background_wall.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* **************************FLOATING WINDOW******************** */
+
+.counter .wrap {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1E3D4;
+    padding: 40px 70px;
+    border-radius: 30px;
+}
+
+.counter .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 60px;
+
+}
+
+.counter .wrap .card1,
+.counter .wrap .card2,
+.counter .wrap .card3 {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+    color: #A65439;
+}
+
+.counter .wrap .num {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+.counter .wrap .desc {
+    margin-top: 10px;
+}
+
+/* *****************************WELCOME TO PAW PATROL*********** */
+
+.welcome h2 {
+    font-size: 48px;
+    color: #A65439;
+    text-align: center;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+.welcome p {
+    font-size: 18px;
+    color: #A65439;
+    text-align: center;
+    padding: 20px 150px 0;
+}
+
+.welcome .container {
+    padding: 0 200px 30px;
+}
+
+/* *****************************ABOUT US************************ */
+
+.about .container {
+    padding: 30px 200px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutimage img {
+    height: 400px;
+    width: auto;
+    margin-right: 30px;
+    order: 1;
+}
+
+.about .content {
+    text-align: center;
+    order: 2;
+}
+
+.about .content h2 {
+    font-size: 36px;
+    color: #A65439;
+    padding-bottom: 20px;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+.about .aboutcontent {
+    font-size: 16px;
+    color: #A65439;
+    padding-bottom: 40px;
+}
+
+.about .wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.about .card1,
+.about .card2 {
+    background-color: #F1E3D4;
+    border-radius: 30px;
+    padding: 40px 30px;
+    margin: 10px;
+    color: #000000;
+    order: 3;
+}
+
+.about .wrap h3 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    color: #A65439;
+}
+
+.about .wrap span {
+    font-family: 'Averia Serif Libre', serif;
+}
+
+
+.about .wrap p {
+    color: #A65439;
+    text-align: justify;
+}
+
+.about .wrap img {
+    height: 35px;
+    width: auto;
+    margin: 5px;
+}
+
+
+/* *********************************SERVICES****************************** */
+.services .container {
+    padding: 60px 200px;
+}
+
+.services h2 {
+    text-align: center;
+    color: #A65439;
+    padding-bottom: 40px;
+    font-size: 36px;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+.services .cards {
+    padding: 0 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 40px;
+}
+
+
+.services .cardimg {
+    background-color: #F1E3D4;
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px solid #A65439;
+}
+
+.services .cardimg img {
+    height: auto;
+    width: 80px;
+}
+
+.services .desc {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #A65439;
+}
+
+/* ***************************CONTACT US************ */
+.contact .container {
+    padding: 60px 200px;
+
+}
+
+
+.contact h2 {
+    text-align: center;
+    color: #A65439;
+    padding-bottom: 40px;
+    font-size: 36px;
+    font-family: 'Averia Serif Libre', serif;
+
+}
+
+.contact .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.contact .cards a {
+   color: #A65439;
+}
+
+
+
+
+.contact .card1,
+.contact .card2,
+.contact .card3,
+.contact .card4 {
+    background-color: #F1E3D4;
+    padding: 20px 30px;
+    border-radius: 30px;
+    /* margin: 10px; */
+    height: 200px;
+    width: 400px;
+    text-align: center;
+}
+
+.contact .icon img {
+    height: 50px;
+    width: auto;
+}
+
+.contact .card2 img,
+.contact .card4 img {
+    height: 40px;
+    width: auto;
+}
+
+.contact .title {
+    text-align: center;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #A65439;
+}
+
+.contact .desc {
+    text-align: center;
+    padding: 10px;
+    color: #A65439;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+
+form .first {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+form .first input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #D2A377;
+    border-radius: 10px;
+    outline: none;
+    color: #A65439;
+    background-color: #F1E3D4;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 2px solid #A65439;
+    background-color: #fef9f2;
+    outline: none;
+    font-weight: 600;
+}
+
+form .submit {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    margin: 10px;
+    font-weight: 500;
+}
+
+form input[type="submit"]:hover {
+    background-color: #c3814c;
+    color: #ffffff;
+    border: none;
+}
+
+
+/* ****************FOOTER*************************** */
+
+footer {
+    background-color: #7C4030;
+}
+
+footer .card1 img {
+    height: 40px;
+    width: auto;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    color: #ffffff;
+    padding: 30px 200px;
+}
+
+footer .container a {
+    color: #ffffff;
+}
+
+footer .copyright {
+    color: #ffffff;
+    text-align: center;
+    border-top: 2px solid #ffffff;
+}
+
+footer .copyright p {
+    padding: 10px;
+}
+
+footer .card1 {
+    padding: 20px 50px 20px 20px;
+}
+
+footer .card2 div {
+    padding: 5px;
+}
+
+
+footer .title {
+    font-size: 20px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+footer .social i {
+    font-size: 20px;
+    text-align: justify;
+}
+
+footer .social a {
+    padding: 5px;
+}
+
+footer .title {
+    padding-bottom: 5px;
+}
+
+/* ****************** DESKTOP*********************** */
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1200px) {}
+
+/* ****************** LAPTOP************************ */
+
+@media only screen and (min-device-width :768px) and (max-device-width : 1023px) {
+    header nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        background-color: #ffffff;
+        text-align: start;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+        padding: 0 20px 20px 20px;
+    }
+
+    .logo a img {
+        height: 20px;
+        width: auto;
+    }
+
+
+    header nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+
+    header .container {
+        padding: 20px 20px;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header .menubtn {
+        display: block;
+    }
+
+
+}
+
+/* *********************TAB************************* */
+
+@media only screen and (min-device-width :576px) and (max-device-width : 767px) {
+
+    /* Header adjustments */
+    header .container {
+        padding: 20px 40px;
+    }
+
+    header nav {
+        margin-top: 10px;
+        /* Add space between logo and navigation on smaller screens */
+    }
+
+    /* Banner adjustments */
+    .banner h1 {
+        text-align: center;
+        /* Center align banner heading on smaller screens */
+    }
+
+    /* About section adjustments */
+    .about .container {
+        flex-direction: column;
+        /* Stack about content on smaller screens */
+        align-items: center;
+    }
+
+    .aboutimage img {
+        margin-right: 0;
+        /* Remove margin from image on smaller screens */
+        order: 2;
+        /* Move image below content on smaller screens */
+    }
+
+    .about .content {
+        order: 1;
+        /* Move content above image on smaller screens */
+    }
+
+    .about .wrap {
+        justify-content: center;
+        /* Center cards on smaller screens */
+    }
+
+    /* Services section adjustments */
+    /* .services .cards {
+        grid-template-columns
+    } */
+}
+
+
+/* ********************MOBILE*********************** */
+
+@media only screen and (min-device-width :280px) and (max-device-width : 575px) {
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        background-color: #ffffff;
+        text-align: start;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+        padding: 0 20px 20px 20px;
+    }
+
+    .logo a img {
+        height: 30px;
+        width: auto;
+    }
+
+    header nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+
+    header .container {
+        padding: 15px 20px;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header .menubtn {
+        display: block;
+    }
+
+    /* ******************************************************************BANNER************************************************************************ */
+
+    .banner {
+        background-image: linear-gradient(to right, rgba(121, 65, 51, 0.6), rgba(121, 65, 51, 0.6), rgba(219, 181, 150, 0.6)), url(../Image/bnr.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: local;
+        background-repeat: no-repeat;
+    }
+
+    .banner .container {
+        color: #ffffff;
+        padding: 50px 20px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+        font-family: 'Averia Serif Libre', serif;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .banner p {
+        font-size: 12px;
+        border-left: none;
+        padding-left: 4px;
+        padding-right: 4px;
+        text-align: center;
+    }
+
+    .banner a {
+        font-size: 12px;
+        color: #7C4030;
+        background-color: #F1E3D4;
+        padding: 4px 8px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .banner a:hover {
+        background-color: #A65439;
+        color: #ffffff;
+    }
+
+    .fetch {
+        padding-top: 15px;
+        display: flex;
+    }
+
+    /* **************************FLOATING WINDOW******************** */
+
+    .counter .wrap {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding: 30px 0;
+        border-radius: 0;
+    }
+
+    .counter .container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 0;
+
+    }
+
+    .counter .wrap .card1,
+    .counter .wrap .card2,
+    .counter .wrap .card3 {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #ffffff;
+        border-radius: 30px;
+        border: 2px solid;
+        margin: 10px;
+        width: 200px;
+        height: auto;
+        color: #A65439;
+    }
+
+    .counter .wrap .num {
+        font-size: 36px;
+        font-weight: bold;
+        font-family: 'Averia Serif Libre', serif;
+    }
+
+    .counter .wrap .desc {
+        margin-top: 10px;
+    }
+
+
+    /* *****************************WELCOME TO PAW PATROL*********** */
+
+    .welcome h2 {
+        font-size: 26px;
+        color: #A65439;
+        text-align: center;
+        font-family: 'Averia Serif Libre', serif;
+        margin-top: 50px;
+    }
+
+    .welcome p {
+        font-size: 12px;
+        color: #A65439;
+        text-align: center;
+        padding: 10px 2px 5px 2px;
+    }
+
+    .welcome .container {
+        padding: 0 20px 20px;
+    }
+
+    /* *****************************ABOUT US************************ */
+
+    .about .container {
+        padding: 20px 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .aboutimage img {
+        height: 250px;
+        width: auto;
+        margin: 0;
+        order: 2;
+    }
+
+    .about .content {
+        text-align: center;
+    }
+
+    .about .content h2 {
+        font-size: 26px;
+        color: #A65439;
+        padding-bottom: 20px;
+        font-family: 'Averia Serif Libre', serif;
+        margin-top: 50px;
+    }
+
+    .about .aboutcontent {
+        font-size: 12px;
+        color: #A65439;
+        padding-bottom: 40px;
+        order: 1;
+        text-align: justify;
+    }
+
+    .about .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about .card1,
+    .about .card2 {
+        background-color: #F1E3D4;
+        border-radius: 30px;
+        padding: 40px 30px;
+        margin: 10px 0;
+        color: #000000;
+        order: 3;
+    }
+
+    .about .wrap h3 {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5px;
+        color: #A65439;
+    }
+
+    .about .wrap span {
+        font-family: 'Averia Serif Libre', serif;
+    }
+
+
+    .about .wrap p {
+        color: #A65439;
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    .about .wrap img {
+        height: 35px;
+        width: auto;
+        margin: 5px;
+    }
+
+
+    /* *********************************SERVICES****************************** */
+    .services .container {
+        padding: 60px 200px;
+    }
+
+    .services h2 {
+        text-align: center;
+        color: #A65439;
+        padding-bottom: 40px;
+        font-size: 26px;
+        font-family: 'Averia Serif Libre', serif;
+        margin-top: 50px;
+    }
+
+    .services .cards {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 40px;
+    }
+
+
+    .services .cardimg {
+        background-color: #F1E3D4;
+        padding: 30px;
+        border-radius: 30px;
+        border: 1px solid #A65439;
+    }
+
+    .services .cardimg img {
+        height: auto;
+        width: 80px;
+    }
+
+    .services .desc {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        color: #A65439;
+    }
+
+    /* ***************************CONTACT US************ */
+    .contact .container {
+        padding: 60px 20px;
+
+    }
+
+    .contact h2 {
+        text-align: center;
+        color: #A65439;
+        padding-bottom: 40px;
+        font-size: 26px;
+        font-family: 'Averia Serif Libre', serif;
+
+    }
+
+    .contact .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        /* gap: 20px; */
+        padding-bottom: 40px;
+    }
+
+    .contact .card1,
+    .contact .card2,
+    .contact .card3,
+    .contact .card4 {
+        background-color: #F1E3D4;
+        padding: 20px 30px;
+        border-radius: 30px;
+        /* margin: 10px; */
+        height: 200px;
+        width: 330px;
+        text-align: center;
+    }
+
+    .contact .icon img {
+        height: 50px;
+        width: auto;
+    }
+
+    .contact .card2 img,
+    .contact .card4 img {
+        height: 40px;
+        width: auto;
+    }
+
+    .contact .title {
+        text-align: center;
+        padding: 0 10px;
+        font-size: 20px;
+        color: #A65439;
+    }
+
+    .contact .desc {
+        text-align: center;
+        padding: 10px 50px;
+        color: #A65439;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        color: white;
+    }
+
+    form .first {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    form .first input {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    form input,
+    form textarea {
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #D2A377;
+        border-radius: 10px;
+        outline: none;
+        color: #A65439;
+        background-color: #F1E3D4;
+    }
+
+    form input:focus,
+    form textarea:focus {
+        border: 2px solid #A65439;
+        background-color: #fef9f2;
+        outline: none;
+        font-weight: 600;
+    }
+
+    form .submit {
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    form input[type="submit"] {
+        padding: 10px 20px;
+        margin: 10px;
+        font-weight: 500;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #c3814c;
+        color: #ffffff;
+        border: none;
+    }
+
+
+    /* ****************FOOTER*************************** */
+
+    footer {
+        background-color: #7C4030;
+    }
+
+    footer .card1 img {
+        height: 40px;
+        width: auto;
+    }
+
+    footer .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        color: #ffffff;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    footer .container a {
+        color: #ffffff;
+    }
+
+    footer .copyright {
+        color: #ffffff;
+        text-align: center;
+        border-top: 2px solid #ffffff;
+    }
+
+    footer .copyright p {
+        padding: 10px;
+    }
+
+    footer .card1 {
+        padding: 20px 0px;
+    }
+
+    /* footer .card1 .content{
+    text-align: center;
+} */
+
+    footer .card2 {
+        padding: 5px;
+    }
+
+    footer .desc {
+        font-weight: normal;
+        text-decoration: underline;
+        padding: 5px 0;
+    }
+
+    footer .card3 {
+        /* padding: 20px; */
+        padding-top: 20px;
+    }
+
+    footer .title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    footer .social {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin-top: 20px;
+        /* padding: 10px; */
+    }
+
+    footer .social i {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    footer .social a {
+        padding: 20px;
+    }
+
+    footer .title {
+        padding-bottom: 5px;
+    }
+
+    footer .copyright p {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-device-width :280px) and (max-device-width : 575px) {}
